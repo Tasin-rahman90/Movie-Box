@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livhast | Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body class="auth-body">
+    <div class="auth-shell">
+        <div class="auth-card">
+            <div class="brand-row">
+                <a href="home.html" class="brand-mark">Livhast.</a>
+            </div>
+            <h1>Create your account</h1>
+            <p class="subtitle">Join and start streaming your favorite movies instantly.</p>
+
+            <form id="signupForm" novalidate>
+                <label>
+                    <span>Full name</span>
+                    <input type="text" name="fullName" placeholder="Your full name" required>
+                </label>
+
+                <label>
+                    <span>Email address</span>
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+
+                <label>
+                    <span>Password</span>
+                    <input type="password" name="password" placeholder="At least 6 characters" required>
+                </label>
+
+                <label>
+                    <span>Confirm password</span>
+                    <input type="password" name="confirmPassword" placeholder="Repeat your password" required>
+                </label>
+
+                <button type="submit">Create Account</button>
+            </form>
+
+            <p class="auth-footer">Already have an account? <a href="login.html">Log in</a></p>
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

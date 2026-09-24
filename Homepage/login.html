@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livhast | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body class="auth-body">
+    <div class="auth-shell">
+        <div class="auth-card">
+            <div class="brand-row">
+                <a href="home.html" class="brand-mark">Livhast.</a>
+            </div>
+            <h1>Welcome back</h1>
+            <p class="subtitle">Sign in to continue your watchlist and trending picks.</p>
+
+            <form id="loginForm" novalidate>
+                <label>
+                    <span>Email address</span>
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+
+                <label>
+                    <span>Password</span>
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                </label>
+
+                <div class="row-inline">
+                    <label class="checkbox-wrap">
+                        <input type="checkbox" checked>
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="mini-link">Forgot password?</a>
+                </div>
+
+                <button type="submit">Log In</button>
+            </form>
+
+            <p class="auth-footer">Need an account? <a href="signup.html">Create one</a></p>
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
