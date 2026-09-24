@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="movie-details.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <a href="home.html" class="brand">Livhast.</a>
+            <a href="home.html" class="back-link">← Back to home</a>
+        </header>
+
+        <main class="movie-layout">
+            <section class="poster-column">
+                <img id="moviePoster" src="" alt="movie poster">
+            </section>
+
+            <section class="details-column">
+                <span class="badge" id="movieBadge">Now Showing</span>
+                <h1 id="movieTitle">Movie Title</h1>
+
+                <div class="meta-strip">
+                    <span id="movieRating">8.5</span>
+                    <span id="movieYear">2024</span>
+                    <span id="movieGenre">Action</span>
+                    <span id="movieRuntime">2h 12m</span>
+                </div>
+
+                <p id="movieDescription" class="description"></p>
+
+                <div class="info-grid">
+                    <div>
+                        <span class="label">Director</span>
+                        <strong id="movieDirector">-</strong>
+                    </div>
+                    <div>
+                        <span class="label">Cast</span>
+                        <strong id="movieCast">-</strong>
+                    </div>
+                    <div>
+                        <span class="label">Language</span>
+                        <strong id="movieLanguage">-</strong>
+                    </div>
+                    <div>
+                        <span class="label">Screen</span>
+                        <strong id="movieScreen">-</strong>
+                    </div>
+                </div>
+
+                <div class="ticket-panel">
+                    <div class="ticket-row">
+                        <span>Number of tickets</span>
+                        <div class="quantity-box">
+                            <button type="button" data-qty="-1" class="qty-btn">-</button>
+                            <strong id="ticketQty">1</strong>
+                            <button type="button" data-qty="1" class="qty-btn">+</button>
+                        </div>
+                    </div>
+
+                    <div class="seat-row">
+                        <span>Seat Type</span>
+                        <div class="seat-options" id="seatOptions"></div>
+                    </div>
+
+                    <div class="summary-box">
+                        <div class="summary-row">
+                            <span>Tickets</span>
+                            <strong id="summaryTickets">1</strong>
+                        </div>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <strong id="summarySubtotal">৳420</strong>
+                        </div>
+                        <div class="summary-row">
+                            <span>Service fee</span>
+                            <strong id="summaryFees">৳40</strong>
+                        </div>
+                        <div class="summary-row total-row">
+                            <span>Total</span>
+                            <strong id="summaryTotal">৳460</strong>
+                        </div>
+                    </div>
+
+                    <button id="confirmBooking" class="book-btn" type="button">Book Tickets</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="movie-details.js"></script>
+</body>
+</html>
